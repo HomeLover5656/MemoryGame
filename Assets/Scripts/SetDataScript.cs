@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class SetDataScript : MonoBehaviour
 {
-    public int n,Term,LimitTime,Form,FirP,SecP,ThirP,FourP;
-    public double deray_max;
-    public bool noncenter,Exreach,Pilemode,Rotatemode;
+    public int block_num,remember_num,limit_time,remember_time;
 
     //オブジェクトを破壊させないための処理===============================
     public static SetDataScript Instance {
@@ -21,19 +19,10 @@ public class SetDataScript : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad (gameObject);
         
-        n = 4;
-        Term = 0;
-        LimitTime = 0;
-        Form = 1;
-        FirP = 0;
-        SecP = 1;
-        ThirP = 4;
-        FourP = 4;
-        deray_max = 1.0;
-        noncenter = false;
-        Exreach = false;
-        Pilemode = false;
-        Rotatemode = false;
+        block_num = 4;
+        remember_num = 5;
+        limit_time = 20;
+        remember_time = 3;
     }
     //===================================================================
 

@@ -12,7 +12,7 @@ public class ScaleScript : MonoBehaviour
     {
         SetData = GameObject.Find("SetData");
         setdata = SetData.GetComponent<SetDataScript>();
-        this.transform.localScale *= setdata.n / 3.0f;
+        this.transform.localScale *= setdata.block_num / 3.0f;
 
     }
 

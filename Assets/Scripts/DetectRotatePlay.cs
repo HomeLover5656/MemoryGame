@@ -8,9 +8,6 @@ public class DetectRotatePlay : MonoBehaviour{
     bool PrePortrait;
     bool Portrait;
     
-    public RectTransform WinText;
-    public RectTransform LoseText;
-    public RectTransform Turn;
     public RectTransform WhichTurn;
     public RectTransform TimeLimit;
     public GameObject Buttons;
@@ -42,12 +39,6 @@ public class DetectRotatePlay : MonoBehaviour{
         PrePortrait = getPortrait();
         //画面の向きに合わせて初期配置を設定
         if (PrePortrait){
-            WinText.anchoredPosition = new Vector3(0,750,0);
-            WinText.localScale = new Vector3(1.5f, 1.5f, 1);
-            LoseText.anchoredPosition = new Vector3(0,750,0);
-            LoseText.localScale = new Vector3(1.5f, 1.5f, 1);
-            Turn.anchoredPosition = new Vector3(0,900,0);
-            Turn.localScale = new Vector3(1.5f,1.5f,1);
             WhichTurn.anchoredPosition = new Vector3(-180,600,0);
             WhichTurn.localScale = new Vector3(3,3,1);
             TimeLimit.anchoredPosition = new Vector3(-180,420,0);
@@ -68,12 +59,6 @@ public class DetectRotatePlay : MonoBehaviour{
             SubCamera.rect = new Rect(0.65f, 0.8f, 0.35f, 0.2f);
             }
         else{
-            WinText.anchoredPosition = new Vector3(0,200,0);
-            WinText.localScale = new Vector3(1, 1, 1);
-            LoseText.anchoredPosition = new Vector3(0,200,0);
-            LoseText.localScale = new Vector3(1, 1, 1);
-            Turn.anchoredPosition = new Vector3(-280,200,0);
-            Turn.localScale = new Vector3(1,1,1);
             WhichTurn.anchoredPosition = new Vector3(0,240,0);
             WhichTurn.localScale = new Vector3(1,1,1);
             TimeLimit.anchoredPosition = new Vector3(0,180,0);
@@ -102,12 +87,6 @@ public class DetectRotatePlay : MonoBehaviour{
         {
                 // 画面の向きが変わるとボタン配置を変更
             if (Portrait){
-            WinText.anchoredPosition = new Vector3(0,750,0);
-            WinText.localScale = new Vector3(1.5f, 1.5f, 1);
-            LoseText.anchoredPosition = new Vector3(0,750,0);
-            LoseText.localScale = new Vector3(1.5f, 1.5f, 1);
-            Turn.anchoredPosition = new Vector3(0,900,0);
-            Turn.localScale = new Vector3(1.5f,1.5f,1);
             WhichTurn.anchoredPosition = new Vector3(-180,600,0);
             WhichTurn.localScale = new Vector3(3,3,1);
             TimeLimit.anchoredPosition = new Vector3(-180,420,0);
@@ -128,12 +107,6 @@ public class DetectRotatePlay : MonoBehaviour{
             SubCamera.rect = new Rect(0.65f, 0.8f, 0.35f, 0.2f);
             }
             else{
-            WinText.anchoredPosition = new Vector3(0,200,0);
-            WinText.localScale = new Vector3(1, 1, 1);
-            LoseText.anchoredPosition = new Vector3(0,200,0);
-            LoseText.localScale = new Vector3(1, 1, 1);
-            Turn.anchoredPosition = new Vector3(-280,200,0);
-            Turn.localScale = new Vector3(1,1,1);
             WhichTurn.anchoredPosition = new Vector3(0,240,0);
             WhichTurn.localScale = new Vector3(1,1,1);
             TimeLimit.anchoredPosition = new Vector3(0,180,0);
